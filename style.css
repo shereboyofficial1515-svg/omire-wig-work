@@ -651,7 +651,7 @@ p {
 }
 
 .contact-section h4 {
-    font-size: 6px;
+    font-size: 1.5rem;
     margin: 1rem 0;
     padding: 0%;
 }
@@ -758,7 +758,18 @@ form h3 {
     margin: 6px;
     border-radius: 5px;
 }
-
+.contact-section .watch {
+    padding: 7px;
+    width: 350px;
+    font-size: 13px;
+    margin: 3px auto;
+    background: #f7060631;
+    display: none;
+    align-items: center;
+    border-radius: 5px;
+    
+    justify-content: center;
+}
 /* here is for the footer*/
 footer {
     color: var(--text-light);
@@ -767,24 +778,36 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 5px;
     font-weight: bold;
     margin-top: 15px;
 }
 .footer-link{
     display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+footer .footer-link i {
+    width: 40px;
+    height: 40px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-}
-footer i {
-    color: var(--accent);
+    color: var(--text-light);
     border-radius: 10px;
     margin: 0% 5px;
+    padding: 10px;
+    background: rgba(37, 32, 3, 0.84);
 }
-
+footer .social-media {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+footer .social-media i:hover {
+    box-shadow: 0px 0px 10px var(--accent);
+    transform: scale(1.1);
+}
 footer a {
     display: flex;
     flex-direction: column;
@@ -807,23 +830,32 @@ footer h3 {
     text-shadow: 5px 0px 10px rgba(236, 213, 7, 0.603);
     overflow: hidden;
     margin: 15px 0;
-    background-color: black;
+    text-decoration: underline var(--accent);
     color: var(--accent);
 }
-
-footer ul li {
-    list-style-type: none;
+.follow-us {
     font-size: 12px;
-    margin: 10px 0;
+    color: var(--accent);
+    display: block;
+    text-decoration: underline var(--accent);
 }
 
-footer ul {
+
+footer .service-content-link {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
-
+footer .service-content-link p {
+    font-size: 12px;
+    color: var(--text-light);
+    padding: 10px 0;
+}
+footer .copyright {
+    font-size: 12px;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 10px;
+}
 /* MOBILE RESPONSIVE */
 @media screen and (max-width:768px) {
 
