@@ -18,12 +18,16 @@
             <h1> <strong class="logo-text">0MIRE</strong> WIG WORK</h1>
         </div>
         <nav>
-            <a href="#home"> HOME</a>
-            <a href="#about"> ABOUT</a>
-            <a href="#service"> SERVICE</a>
-            <a href="#price"> PRICE</a>
-            <a href="#testimonies"> TESTIMONIES</a>
-            <a href="#contact"> CONTACT</a>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox"> Menu </label>
+            <div class="navigation">
+                <a href="#home"> Home</a>
+                <a href="#about"> About</a>
+                <a href="#service"> Service</a>
+                <a href="#price"> Price</a>
+                <a href="#testimonies"> FeedBack</a>
+                <a href="#contact"> Contact</a>
+            </div>
         </nav>
         <div class="cta">
             <a href="#contact"> Shop Now</a>
@@ -328,7 +332,8 @@
                 <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="070xxxxxx00" required><br>
                 <p class="watch" id="phoneWatch"></p>
                 <textarea name="inputMessage" id="inputMessage" cols="25" rows="5"
-                    placeholder="Type your message"></textarea><br>
+                    placeholder="Type your message"></textarea>
+                <p class="count"> <span id="startCount">0</span> / <span id="endCount">500</span></p>
                 <p class="watch" id="messageWatch"></p>
                 <button type="submit" id="sendMessage">Send Message</button>
             </form>
